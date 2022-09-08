@@ -1,4 +1,4 @@
-import Login from "./example"
+import Login from "./example";
 
 export default function Home() {
   return (
@@ -7,5 +7,5 @@ export default function Home() {
         <Login />
       </h1>
     </div>
-  )
+  );
 }
