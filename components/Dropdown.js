@@ -6,9 +6,9 @@ export default function Dropdown(props) {
 
 
   return (
-    <div className="flex flex-col mt-16 w-35 ">
+    <div className="flex flex-col mt-8 w-35 ">
       <button onClick={() => setActive(!active)}
-        className="py-4 transition-colors duration-300 bg-blue-200 rounded-lg hover:bg-blue-400">
+        className="py-4 transition-colors duration-300 bg-indigo-300 rounded-2xl hover:bg-indigo-400 text-white text-lg font-bold">
         {props.text}
       </button>
 
