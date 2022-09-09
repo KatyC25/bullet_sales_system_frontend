@@ -49,8 +49,9 @@ function generarInputLabels(arreglo, key_name) {
         {arreglo.map((obj, index) => <InputLabel
             label={obj.label}
             inputName={obj.inputName}
-            key={key_name + index
-            } type={obj.type} />)}
+            key={key_name + index}
+            type={obj.type}
+            yellow />)}
     </div>)
 
 }
@@ -58,7 +59,7 @@ function generarInputLabels(arreglo, key_name) {
 export default function Pestaña(props) {
 
     return (
-        <div className='w-screen px-10 py-20 bg-white border-gray-100 rounded-3xl'>
+        <div className='w-screen px-10 py-20 bg-white border border-yellow-300 rounded-3xl'>
             <h1 className='text-5xl font-semibold'> Balance General</h1>
             <form className="mt-8" onSubmit={event => {
                 event.preventDefault()
@@ -92,7 +93,7 @@ export default function Pestaña(props) {
                 <h2 className='text-lg text-center font-serif'>Patrimonio</h2>
                 {generarInputLabels(patrimonio, 'patrimonio')}
 
-                <button className=' active:scale-[.98] w-full active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl bg-indigo-400 text-white text-lg font-bold'
+                <button className=' active:scale-[.98] w-full active:duration-75 hover:scale-[1.01] ease-in-out transition-all py-3 rounded-xl bg-yellow-400 text-white text-lg font-bold'
                     type="Calcular" >Calcular</button>
             </form>
         </div>
